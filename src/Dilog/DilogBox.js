@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './Dilog.module.css';
 import { FaShoppingCart } from 'react-icons/fa';
-export default function DilogBox() {
+export default function DilogBox({setShow ,show}) {
   const [show1, setShow1] = useState(true);
   const [show2, setShow2] = useState(true);
   const [index, setIndex] = useState(0);
@@ -47,7 +47,7 @@ export default function DilogBox() {
     },
     {
       id: 3,
-      elem: <p>Your order is still pending...</p>,
+      elem: <p onClick={()=>setShow(false)}>Place ur order first...</p>,
     },
    
   ];
@@ -142,6 +142,7 @@ export default function DilogBox() {
       orderID,
     };
     localStorage.setItem('orderDetails', JSON.stringify(orderDetailsInfo));
+    setShow(false)
   }
 
   

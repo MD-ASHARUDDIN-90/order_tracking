@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className={style.main}>
       <div  className={style.floatBtn}>
-       {show ? <DilogBox /> : "" }
+       {show ? <DilogBox show={show} setShow={setShow} /> : "" }
       < AiFillWechat  onClick={handleClick} className={style.icons}/>
       </div>
     </div>
