@@ -45,6 +45,10 @@ export default function DilogBox() {
       id: 2,
       elem: <p>Your order is still pending...</p>,
     },
+    {
+      id: 3,
+      elem: <p>Your order is still pending...</p>,
+    },
    
   ];
 
@@ -123,11 +127,11 @@ export default function DilogBox() {
     },
   ];
   function handleFunction(){
-    setIndex(index + 1)
+  
     if(fillId == orderDetailsLocal?.orderID ){
-      alert("your order is pending")
+      setIndex(index + 1)
     }else{
-      alert(" please place the order")
+      setIndex(index + 2)
     }
   }
   function handleSubmit() {
