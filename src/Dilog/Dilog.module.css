@@ -1,0 +1,53 @@
+.main {
+  background-color: rgb(111, 190, 128);
+  width: 30vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 7rem;
+  right: 4rem;
+  border-radius: 20px 20px 0px 20px;
+}
+.head {
+  height: 8vh;
+  background-color: rgb(0, 154, 59);
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 20px 20px 0px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.icon {
+  font-size: 1.5rem;
+}
+.option {
+  height: 30vh;
+  padding: 0.5rem;
+}
+.optionIn {
+  padding: 2rem;
+}
+.optionIn p {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(226, 144, 144, 0.5);
+}
+.input {
+  height: 6vh;
+  width: 20rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-top: 2vh;
+  padding: 1rem;
+}
+
+button {
+  margin-top: 2vh;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
